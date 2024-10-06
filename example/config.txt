@@ -1,0 +1,2 @@
+Prefix plugins/FeaturePlot/example/
+Plugin FeaturePlot inputfile SQTL.rds outputfile featureplot.pdf
