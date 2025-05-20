@@ -11,7 +11,8 @@ input <- function(inputfile) {
 run <- function() {}
 
 output <- function(outputfile) {
-pdf(outputfile)
-	## ----SQTLdmSQTLdata_plot---------------------------------------------------
+	pdf(outputfile)
+write.csv(myD@blocks@unlistData, paste(outputfile, "csv", sep="."))	
+## ----SQTLdmSQTLdata_plot---------------------------------------------------
 plotData(myD, plot_type = "features")
 }
